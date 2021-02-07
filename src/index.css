@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+    --primary-color: #3f51b5;
+    --primary-white: #fff;
+    --primary-black: #000000;
+    --padding-right: 70px;
+}
+
+
+body {
+    width: 100%
+}
+.header {
+    width: 100%;
+    padding: 18px 102px 18px 102px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--primary-black);
+    top: 0;
+    z-index: 1000
+}
+
+.header p {
+    color: rgba(236, 232, 238, 0.986)!important;
+    cursor: pointer
+}
+
+.header_button {
+    margin-right: 1rem!important;
+    color: rgba(236, 232, 238, 0.986)!important;
+    padding: 0.6rem 1rem!important;
+    border-radius: 0!important;
+    transition: 0.5s all ease
+}
+
+.header_button:hover {
+    background-color: var(--primary-color)!important;
+    color: white!important;
+}
+
+
+.main {
+    padding: 0 var(--padding-right)
+}
+
+.hero {
+    height: 70vh;
+    background-image: url('./images/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+    background-attachment: fixed;
+   
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-title {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem
+}
+
+.hero-title span {
+    margin: 0.4rem 0;
+    display: inline!important;
+}
+
+.hero-button {
+    margin-top: 1rem!important
+}
+
+
+
+.btn {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 1rem 0rem;
+    margin-top: 1rem!important;
+    font-weight: 500;
+}
+
+
+.top-headline {
+    padding: 2rem var(--padding-right)
+}
+
+.header-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news-blog {
+    margin-top: 2rem
+}
+
+
+@media only screen and (max-width: 1000px) {
+   .header-tags {
+       display: none;
+   }
+   .header {
+    padding: 18px 102px 18px 50px;
+    
+}
+
+.header-div h2 {
+    margin-bottom: 1rem;
+}
+ .top-search {
+     margin-top: 0.8rem!important
+ }
 }
