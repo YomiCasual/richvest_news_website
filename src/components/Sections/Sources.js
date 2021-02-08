@@ -17,7 +17,7 @@ const TopHeadlines = () => {
   const fetchData = () => {
     setIsLoading(true);
     Axios.get(
-      `https://newsapi.org/v2/everything?sources=${pickSource}&apiKey=${process.env.REACT_APP_API_KEY}`
+      `https://newsapi.org/v2/everything?sources=${pickSource}&apiKey=3f97599099bc43aa86fb68e11ddc9ce2`
     )
       .then((res) => {
         let data = res.data;
@@ -31,7 +31,7 @@ const TopHeadlines = () => {
 
   const fetchSources = () => {
         Axios.get(
-          `https://newsapi.org/v2/sources?apiKey=${process.env.REACT_APP_API_KEY}`
+          `https://newsapi.org/v2/sources?apiKey=3f97599099bc43aa86fb68e11ddc9ce2`
         )
           .then((res) => {
             let data = res.data;

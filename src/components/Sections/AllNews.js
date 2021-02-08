@@ -42,7 +42,7 @@ const AllNews = () => {
   const fetchData = () => {
     setIsLoading(true);
     Axios.get(
-      `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${process.env.REACT_APP_API_KEY}`
+      `https://newsapi.org/v2/everything?q=bitcoin&apiKey=3f97599099bc43aa86fb68e11ddc9ce2`
     )
       .then((res) => {
         let data = res.data;
@@ -65,7 +65,7 @@ const AllNews = () => {
         console.log(search)
       setIsLoading(true);
       Axios.get(
-        `https://newsapi.org/v2/everything?q=${search}&language=en&apiKey=${process.env.REACT_APP_API_KEY}`
+        `https://newsapi.org/v2/everything?q=${search}&language=en&apiKey=3f97599099bc43aa86fb68e11ddc9ce2`
       )
         .then((res) => {
           let data = res.data;
